@@ -1,0 +1,99 @@
+@import '../base/constant.scss';
+
+.header{
+  height: 60px;
+  padding: 10px 50px; 
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo{
+  font-size: 26px;
+  float:left;
+  height: 100%;
+} 
+
+.logo i{
+  color: #34495e;
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.tab{
+  float:right;
+  width: 650px;
+  height: 100%;
+}
+
+.searchBox{
+  display: inline-block;
+  position: relative;
+}
+
+.searchBox i{
+  display: inline-block;
+  font-size:20px;
+  line-height: 32px;
+  position: absolute;
+  left:10px;
+  color:#e5e5e5;
+}
+
+.searchBox input{
+  box-sizing: border-box;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+  border: 1px solid #e5e5e5;
+  text-indent: 35px;
+  padding-right: 10px;
+  border-radius: 15px;
+  outline: none;     /*隐藏默认轮廓线*/
+  transition: border-color .2s ease;
+}
+
+.searchBox input:focus{
+  border-color:$color1; 
+}
+
+
+.tab ul {
+  width: 100%;
+}
+
+.tab ul li{
+  display: inline-block;  /*IE9前li默认为block*/
+  line-height: 30px;
+  cursor: pointer;
+  transition: all .2 ease;
+  height: 30px;
+}
+
+.tab ul li:not(:first-child):hover{
+  box-sizing: border-box;
+  border-bottom:2px solid $color1;
+  color:$color1;
+}
+
+
+
+
+/*收缩版*/
+.headerShort{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 12px;
+}
+
+.headerShort i{
+  font-size: 12px;
+  transition: all .2 ease;
+  cursor: pointer;
+}
+
+.headerShort i:hover{
+  color:$color1;
+}
+

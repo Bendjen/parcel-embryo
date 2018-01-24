@@ -1,0 +1,10 @@
+
+
+@import '../../../utils/px2rem.scss';
+
+.Code{
+    font-size: 14px;
+    margin: px2rem(80) px2rem(100)!important;
+    max-height: px2rem(2200);
+    width: px2rem(3500)
+}

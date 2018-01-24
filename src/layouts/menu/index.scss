@@ -1,0 +1,125 @@
+@import '../../utils/px2rem.scss';
+@import '../base/constant.scss';
+.block{
+    height: 60px;
+}
+
+.menu{
+    width: px2rem(1200px);
+    padding: 60px px2rem(40px) px2rem(120px) px2rem(120px);
+    z-index: 9;
+    background: rgb(249,249,249);
+    height: 100%;
+    overflow-y:auto; 
+    overflow-x:hidden; 
+    box-sizing: border-box;
+    float: left;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin-bottom: px2rem(80px);
+    margin-top: px2rem(40px);
+    h4{
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: px2rem(40px);
+        cursor: pointer;
+    }
+    h4:hover{
+        color:$color1;
+    }
+    li:not(:first-child){
+        font-size: 14px;
+        padding-left: px2rem(120px);
+        margin-top: px2rem(40px);
+        cursor: pointer;
+        transition: color .2s ease;
+    }
+    li:hover{
+        color:$color1;
+    }
+}
+
+
+
+// 视口小于900时渲染Tab
+
+
+.searchBox{
+  display: inline-block;
+  position: relative;
+  margin-bottom: px2rem(120px);
+}
+
+.searchBox i{
+  display: inline-block;
+  font-size:20px;
+  line-height: 32px;
+  position: absolute;
+  left:10px;
+  color:#e5e5e5;
+}
+
+.searchBox input{
+  box-sizing: border-box;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+  border: 1px solid #e5e5e5;
+  text-indent: 35px;
+  padding-right: 10px;
+  border-radius: 15px;
+  outline: none;     /*隐藏默认轮廓线*/
+  transition: border-color .2s ease;
+}
+
+.searchBox input:focus{
+  border-color:$color1; 
+}
+
+.tab{
+    position: relative;
+    top:-15px;
+    font-size: 16px;
+}
+
+.tab li{
+    display: block;
+    font-size: 14px!important;
+}
+
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+.menuFixed{
+  position: fixed;
+  border-right:1px solid #e5e5e5; 
+}
+
+:global(.menu-enter) {
+  // opacity: 0.01;
+  transform: translate3d(-100%,0,0);
+}
+
+:global(.menu-enter.menu-enter-active) {
+  transform: translate3d(0,0,0);
+  // opacity: 1;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
+}
+
+:global(.menu-leave) {
+  transform: translate3d(0,0,0);
+  // opacity: 1;
+}
+
+:global(.menu-leave.menu-leave-active) {
+  transform: translate3d(-100%,0,0);
+  // opacity: 0.01;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
+}

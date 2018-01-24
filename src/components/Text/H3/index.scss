@@ -1,0 +1,9 @@
+
+
+@import '../../../utils/px2rem.scss';
+
+.H3{
+    font-size: 20px;
+    background: transparent;
+    margin : px2rem(100) px2rem(200);
+}

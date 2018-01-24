@@ -1,0 +1,11 @@
+
+
+@import '../../../utils/px2rem.scss';
+
+.P{
+    font-size: 15px;
+    background: transparent;
+    line-height: px2rem(120);
+    text-indent: px2rem(100);
+    margin: px2rem(80) px2rem(300);
+}

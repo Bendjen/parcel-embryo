@@ -1,0 +1,40 @@
+.typeContainer{
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;  
+    div{
+        display: inline-block;
+        width: 89px;
+        height: 88px;
+        background-image: url(http://static.12301.cc/assets/build/images/prod_type_img_yd.png);
+        cursor: pointer;
+    }
+    div:hover{
+        opacity: 0.7;
+    }  
+}
+
+.item1{
+    background-position: 0 -88px;
+}
+.item1:hover{
+    background-position: 0 -88px;
+}
+.item2{
+    background-position: 0 0;
+}
+.item3{
+    background-position: 0 -176px;
+}
+.item4{
+    background-position: 0 -352px;
+}
+.item5{
+    background-position: 0 -440px
+}
+.item6{
+    background-position: 0 -528px;
+}
+.item7{
+    background-position: 0 -616px;
+}

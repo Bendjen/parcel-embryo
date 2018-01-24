@@ -1,0 +1,13 @@
+
+
+@import '../../../utils/px2rem.scss';
+
+.Quote{
+    border-left: 2px solid #009A61;
+    background: #F6F6F6;
+    color: #555;
+    font-size: 15px;
+    line-height: px2rem(120);
+    margin: px2rem(80) px2rem(100);
+    padding: px2rem(40) px2rem(80);
+}

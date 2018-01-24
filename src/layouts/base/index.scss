@@ -1,0 +1,56 @@
+@import '../../utils/px2rem.scss';
+
+// 写成全局作用域才会有效果，否则默认是局部作用域
+:global(*){
+    padding: 0;
+    margin: 0;
+}
+
+:global(html){
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+:global(body){
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #34495e;
+}
+
+:global(#head){
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+:global(#menu){   
+    position: relative;
+    z-index: 9;
+    background: rgb(249,249,249);
+    height: 100%;
+    float: left;
+    overflow-y:auto; 
+    box-sizing: border-box;
+    border-right:1px solid #e5e5e5; 
+}
+
+:global(#content){
+    padding-top: 60px;
+    height: 100%;
+    overflow: hidden;      /*bfc撑满*/
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+

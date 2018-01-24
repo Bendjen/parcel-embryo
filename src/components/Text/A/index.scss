@@ -1,0 +1,14 @@
+
+
+@import '../../../utils/px2rem.scss';
+
+.A{
+    color: #009a61;
+    text-decoration: none;
+    cursor: pointer;
+}    
+
+.A:hover, .A:focus{
+    color: #004e31;
+    text-decoration: underline;
+} 

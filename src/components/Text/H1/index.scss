@@ -1,0 +1,10 @@
+
+
+@import '../../../utils/px2rem.scss';
+
+.H1{
+    font-size: 24px;
+    background: transparent;
+    margin : px2rem(240) px2rem(100) px2rem(120) px2rem(100);
+    font-weight: 600;
+}
