@@ -32,7 +32,9 @@ class Column extends React.Component{
             <div className={style.column}>
                 <div role='pic'>
                     <a target='_blank' href={href}>
-                        <img src={imgUrl}/>
+                    {console.log(imgUrl)}
+                    {console.log(title)}
+                        <img src={imgUrl?imgUrl.slice(1):'img/mark/machineJavascript.png'}/>
                     </a>
                 </div>
                 <div role='info'>

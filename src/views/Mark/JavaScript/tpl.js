@@ -10,7 +10,7 @@ const Lists = {
         },
         {
             title : 'underscore中的函数式编程',
-            imgUrl : '/img/mark/promise.png',
+            imgUrl : '',
             source : 'GitBook',
             level : 4.5,
             progress : '已完成',

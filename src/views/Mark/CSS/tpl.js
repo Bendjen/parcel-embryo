@@ -10,7 +10,7 @@ const Lists = {
         },
         {
             title : 'Retina屏幕下两倍图',
-            imgUrl : '/img/mark/retinaImg.webp',
+            imgUrl : '/img/mark/retinaImg.jpg',
             source : '前端外刊',
             level : 1.5,
             progress : '已完成',
@@ -18,7 +18,7 @@ const Lists = {
         },
         {
             title : 'CSS: 潜藏着的BFC',
-            imgUrl : '',
+            imgUrl : '/img/mark/bfc.png',
             source : '伯乐在线',
             level : 2,
             progress : '已完成',
@@ -44,7 +44,7 @@ const Lists = {
         },
         {
             title : '10 个独特的 CSS 背景视觉效果',
-            imgUrl : '/img/mark/10-bakgroundgif',
+            imgUrl : '/img/mark/10-bakground.gif',
             source : 'Github',
             level : 2.5,
             progress : '未开始',
